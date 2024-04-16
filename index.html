@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="styles.css">
+</head>
+
+<body>
+    <h1 id="myh1">0</h1>
+    <div id="mycountable">
+    <button id="decreasebtn" class="button">Decrease</button>
+    <button id="increasebtn" class="button">Increase</button>
+    <button id="resetbtn" class="button">Reset</button>
+    </div>
+   <script>
+    let decreasebtn= document.getElementById("decreasebtn")
+    let resetbtn= document.getElementById("resetbtn")
+    let increasebtn= document.getElementById("increasebtn")
+    let myh1= document.getElementById("myh1")
+    let count = 0
+ document.getElementById("decreasebtn").onclick= function(){
+    count--
+ myh1.textContent=count
+ }
+ document.getElementById("resetbtn").onclick= function(){
+    count =0
+ myh1.textContent=count
+ }
+ document.getElementById("increasebtn").onclick= function(){
+    count++
+ myh1.textContent=count
+ }
+   </script> 
+</body>
+</html>
